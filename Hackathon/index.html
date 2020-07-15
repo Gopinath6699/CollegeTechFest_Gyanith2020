@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gyanith '20 - Hackathon</title>
+    <link rel="shortcut icon" href="images/img_0.png">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="learn_more.css">
+    <link rel="stylesheet" type="text/css" href="css/coalesce.css" />
+    <link rel="stylesheet" type="text/css" href="wickedcss.min.css" />
+    <style>
+      body {
+        margin: 0px 0px;
+        font: 1em 'PT Sans', sans-serif;
+        color: white;
+      }
+      
+      h1{
+        text-align: center;
+        top: 30px;
+        width: 700px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      p{
+        font-size: 15px;
+      }
+      #back_button{
+			 position: absolute;
+			 top:4%;
+			 left: 3%;
+			 color: white;
+       font-size: 35px;
+       z-index: 1;
+		 }
+      @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+		 }
+      </style>
+</head>
+<body class="demo-4">
+  <main>
+		<div class="frame">
+		<div class="content content--canvas">
+			<h2 class="content__title"></h2>
+		</div>
+	</main>
+  <!--<canvas id="particle-canvas"></canvas>-->
+  <a href="../index2.html"><i class="fas fa-arrow-left" id="back_button"></i></a>
+  <h1>HACKATHON</h1>
+  <div class="tabbed">
+    <input type="radio" name="tabs" id="tab-nav-1" checked>
+    <label for="tab-nav-1" id="tab1">DESCRIPTION</label>
+    <input type="radio" name="tabs" id="tab-nav-2">
+    <label for="tab-nav-2">CONTACT US</label>
+    <input type="radio" name="tabs" id="tab-nav-3">
+    <label for="tab-nav-3">REGISTER</label>
+    <input type="radio" name="tabs" id="tab-nav-4">
+    <!--label-- for="tab-nav-4">Output</!--label-->
+    <div class="tabs">
+      <div><h2><center>DESCRIPTION</center></h2><p>Digital transformation and developing technologies plays a significant role in the growth of country in all aspects. Here is an enthusiastic opportunity for engineering students all over India to materialize their innovative ideas.</p>
+        <p>IIT Madras research park in collaboration with 3g institute of research and policy studies is  organizing an IoT hackathon from 27/02/2020 to 28/02/2020 at NIT Puducherry to  explore the next-gen technologies of smart world  in an environment that encourages you innovate and build.
+          We are inviting students individually and as teams not more than 4 persons to collaborate and to bring your ideas into reality. There will be 10 problem statements  for you among which you have to select one and to work on it for the perfect implementation of it. Follow the rules for further details.
+          </p>
+        <p>All participants will be awarded with certificates and amazing cash prizes are waiting for best performers. The total prize money is a whooping Rs.1,00,000+ and other benefits include internships at 3GIRPS and more..</p>
+        <p>Date: 5th and 6th March</p>
+        <p>Venue: LH-SF-7</p>
+         <p>Time Slot:</p>
+          <p>11:00 AM Onwards (Day-1)</p>
+          <p>Upto 4:00 PM (Day-2)</p></div>
+      <div><h2><center>CONTACT US</center></h2><p>In case of any Queries or for Registration, feel free to contact us :</p><br>
+        <p>Vamsi</p>
+        <!--<p>Email : abhimanyukrsingh00@gmail.com</p>-->
+        <p>Phone : +91-9182115161</p><br>
+        <div style="opacity: 0;">
+          <p>Peera Sahib</p>
+          <p>Phone : +91-8309366892</p><br>
+          <p>Ohm Trivedi</p>
+          <p>Phone : +91-7016778587</p></div>
+        </div>
+      <div><h2><center>REGISTER</center></h2>
+        <p>Registration Cost: Rs. 1000/per Team.</p>
+        <p>A team can contain a maximum of 4 persons.</p><br>
+        <h2>RULES AND REGULATION:</h2>
+        <p>1.	Required a team, Team must contain at most 4 members. An individual can also participate.</p>
+        <p>2.	Either you can create your own team or you can put a request to other team to add you as a member.</p>
+        <p>3.	The hackfest will start at 05-03-2020 10:00 AM and end at 06-03-2020 4:00 PM, you work on your fest during the allotted time only. If you exceed the time limit your team will be disqualified.</p>
+        <p>4.	Your team has to select one problem statement from the Hackfest problem statement list.</p>
+        <p>5.	Once the hackfest starts, you will get an option to submit your fest, you can submit as many times as you want, the last fest will be considered as the final submission.</p>
+        <p>6.	Your team is expected to come up with new and innovative ideas, any idea that has been copied from somewhere will be disqualified.</p>
+        <p>7.	Your fest must be developed entirely during the Hackfest duration. </p>
+        <p>8.	The intellectual property of your code belongs only to your team.</p>
+        <p>9.	By participating in the hackfest, every members must follow the terms and conditions otherwise the whole team will get disqualified.</p><br><br>
+        <a href="https://www.thecollegefever.com/events/burnout-IgVj9eUqG6"><button class="btn">Register</button></a></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+  <script src="js/noise.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/coalesce.js"></script>
+  <!--<script src="js/background.js"></script>-->
+  <script>
+  $(document).ready(function(){
+				$('body').css('display', 'none');
+				$('body').css('background', 'black');
+				$('body').fadeIn(2000);
+	
+			});
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#root{
+  position: absolute;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+#header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+}
+
+#header i{
+  display: flex;
+  align-self: flex-start;
+  font-size: 35px;
+}
+
+#contentList{
+  list-style-type: none;
+}
+
+.cd-container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-items {
+  padding: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  .cd-items {
+    padding: 2em 0 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-items {
+    padding: 4em 0 0;
+  }
+}
+
+.cd-item {
+  position: relative;
+  margin: 0 0 1em;
+}
+.cd-item > img {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-item {
+    width: 48%;
+    float: left;
+    margin: 0 4% 2em 0;
+  }
+  .cd-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-item {
+    width: 22%;
+    float: left;
+    margin: 0 4% 2.8em 0;
+  }
+  .cd-item:nth-child(2n) {
+    margin-right: 4%;
+  }
+  .cd-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .cd-item.empty-box::after {
+    /* box visible as placeholder when the .cd-quick-view zooms in */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #392c3f;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .no-touch .cd-item:hover .cd-trigger {
+    opacity: 1;
+  }
+
+  .touch .cd-item .cd-trigger {
+    opacity: 1;
+  }
+}
+
+.cd-trigger {
+  font-size: 24px;
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s, background-color 0.2s;
+  -moz-transition: opacity 0.2s, background-color 0.2s;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+.no-touch .cd-trigger:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#videoContainer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

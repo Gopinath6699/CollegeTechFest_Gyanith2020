@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"><!--  Resource style -->
+  <link rel="stylesheet" type="text/css" href="css/swirl.css" />
+  <title>Gyanith '20 - T-Shirts</title>
+  <link rel="shortcut icon" href="images/img_0.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style>
+     #back_button{
+			 position: absolute;
+			 top:12%;
+			 left: 5%;
+			 color: white;
+       font-size: 35px;
+       z-index: 1;
+		 }
+  </style>
+</head>
+
+<body>
+  <i class="fas fa-arrow-left" id="back_button" onclick="goBack()"></i>
+  <main>
+    <div class="frame">
+      <div class="content content--canvas">
+        <h2 class="content__title"></h2>
+      </div>
+  </main>
+  <header>
+    <h1>T-SHIRTS</h1>
+  </header>
+  <header>
+    <h2><center>Coming Soon</center></h2>
+  </header>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/noise.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/swirl.js"></script>
+  <script>
+    function vis() {
+
+      var im = document.getElementsByClassName("selected");
+      im[0].style.visibility = "hidden";
+
+    }
+    function close() {
+      var im = document.getElementsByClassName("selected");
+      im[0].style.visibility = "visible";
+
+    }
+  </script>
+  </div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+
+</html>

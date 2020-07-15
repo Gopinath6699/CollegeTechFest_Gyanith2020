@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="assets/img_0.png">
+  <title>Gyanith '20 - Tech Exhibition by Wingfotech</title>
+</head>
+<body>
+  <div class="content content--canvas">
+  </div>
+  <div id="root">
+    <div id="header">
+      <i class="fas fa-arrow-left" style="float: left;" id="back_button" onclick="goBack()"></i>
+      <h1 style="float: left;">Tech Exhibition by Wingfotech</h1>
+      <h1 style="float: left;">MAR 4-7</h1>
+      <img src="assets/logo.jpg" style="width: 50%;">
+    </div>
+    <div id="mainContent">
+      <ul id="contentList" class="cd-items cd-container">
+        <li class="cd-item">
+          <img class="cd-img" src="assets/aelos.jpg">
+          <strong class="cd-trigger">Dancing Humanoid Robot</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/9DOF.jpg">
+          <strong class="cd-trigger">9DOF Humanoid Robot</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/13DOF.jpg">
+          <strong class="cd-trigger">13 DOF Humanoid Robot</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/translator.jpg">
+          <strong class="cd-trigger">Mini Humanoid with Tanslator</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/Minidrone.jpg">
+          <strong class="cd-trigger">Mini Drone</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/Quadcopter.jpg">
+          <strong class="cd-trigger">Quadcopter</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/iot_device.jpg">
+          <strong class="cd-trigger">IoT device</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/spy.jpg">
+          <strong class="cd-trigger">Spy Robot</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/Hexapod.jpg">
+          <strong class="cd-trigger">Hexapod</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/arm.jpg">
+          <strong class="cd-trigger">Robotics ARM</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/smart.jpg">
+          <strong class="cd-trigger">Smart Bulb</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/socket.jpg">
+          <strong class="cd-trigger">Smart Socket</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/brainWaveSensor.jpg">
+          <strong class="cd-trigger">Brain Wave Sensor</strong>
+        </li>
+        <li class="cd-item">
+          <img class="cd-img" src="assets/handGestureDrone.jpg">
+          <strong class="cd-trigger">Hand Gesture Drone</strong>
+        </li>
+      </ul>
+      <div id="videoContainer">
+        <video src="assets/video.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  <script src="noise.min.js"></script>
+  <script src="util.js"></script>
+  <script src="swirl.js"></script>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>

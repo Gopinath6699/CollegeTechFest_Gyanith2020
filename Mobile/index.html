@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gyanith '20 - Home</title>
+	<script src="../js/jquery.js"></script>
+	<script type="text/javascript" src="scrollme/jquery.scrollme.js"></script>
+	<link rel="shortcut icon" href="../images/img_0.png">
+	<link rel="stylesheet" href="https://use.typekit.net/uok8swb.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/glitch.css" />
+	<link rel="stylesheet" type="text/css" href="css/social.css" />
+	<link rel="stylesheet" type="text/css" href="css/hambur.css" />
+	<link rel="stylesheet" type="text/css" href="css/wickedcss.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style>
+		.social_icons,
+		.word,
+		.gyan_logo,
+		nav,
+		#counter {
+			visibility: hidden;
+		}
+
+		body {
+			overflow: scroll;
+		}
+
+		#menu {
+
+			height: 105vh;
+		}
+
+		canvas {
+			position: fixed;
+			left: 0;
+		}
+
+		.gyan_logo {
+			position: fixed;
+			width: 65%;
+			bottom: 30%;
+			transform: scale(2);
+			animation: fadeIn 6s forwards;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+
+		#date {
+			position: fixed;
+			top: 12%;
+			display: none;
+			font-size: 50px;
+			font-weight: 500;
+			/*width: 400px;*/
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+
+		.word {
+			position: fixed;
+			bottom: 15%;
+			right: 0;
+			left: 0;
+			width: 100%;
+			margin: 0 auto;
+
+			font-size: 50px;
+			transform: scale(0);
+			animation: fadeIn 7s forwards;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				transform: scale(1);
+			}
+		}
+
+		#counter>a {
+			pointer-events: none;
+			cursor: default;
+		}
+
+		#counter>a:nth-child(4) {
+			visibility: hidden;
+
+		}
+
+		.social_icons {
+			position: fixed;
+		}
+
+		#counter {
+			opacity: 1;
+			animation: fadeIn 3s forwards;
+			position: fixed;
+			left: 1%;
+			top: 5%;
+			width: 20px;
+			color: white;
+		}
+
+		.demo4 {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		.panel2 {
+			display: none;
+			transform: scale(0.5);
+			animation: fadeIn 2s forwards;
+			position: fixed;
+			line-height: 1.6;
+			top: 6%;
+		}
+
+		.panel3 {
+			transform: scale(0.5);
+			animation: fadeIn 2s forwards;
+			position: fixed;
+			padding: 0px 100px;
+			width: 1180px;
+			top: 6%;
+			line-height: 1.6;
+			font-family: 'Fira Sans', sans-serif;
+			display: none;
+
+		}
+
+		.panel1 {
+			/*transform: scale(0.5);
+			animation: fadeIn 2s forwards;*/
+			position: fixed;
+			padding: 50px 35px;
+			width: 100vw;
+			top: 6%;
+
+		}
+
+		.panel2 {
+
+			width: 100vw;
+			padding: 50px 35px;
+			font-family: 'Fira Sans', sans-serif;
+
+		}
+
+		.panel {
+
+			transform: scale(0.5);
+			animation: fadeIn 2s forwards;
+			display: none;
+			font-family: 'Bebas Neue', cursive;
+
+		}
+
+		.panelhead {
+			font-family: 'Bebas Neue', cursive;
+		}
+
+		.subpanel1 {
+			transform: scale(0.5);
+			animation: fadeIn 2s forwards;
+			display: none;
+			background: rgba(0, 0, 0, 0.4);
+			font-family: 'Fira Sans', sans-serif;
+			line-height: 1.7;
+
+		}
+
+		html {
+			overflow-y: scroll;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		.box {
+			width: 1200px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			grid-gap: 15px;
+			margin: 0 auto;
+		}
+
+		.card {
+
+			width: 250px;
+			height: 300px;
+			background: #fff;
+			margin: 0 auto;
+			border-radius: 4px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+		}
+
+		.card:before,
+		.card:after {
+			content: "";
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 4px;
+			background: #fff;
+			transition: 0.5s;
+			z-index: -1;
+		}
+
+		.card:hover:before {
+			transform: rotate(20deg);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+		}
+
+		.card:hover:after {
+			transform: rotate(10deg);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+		}
+
+		.card .imgBx {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			bottom: 10px;
+			right: 10px;
+			background: #222;
+			transition: 0.5s;
+			z-index: 1;
+		}
+
+		#scroll {
+			display: none;
+			padding-top: 70px;
+			position: fixed;
+			bottom: 50px;
+			visibility: hidden;
+			animation: fadeIn 3s forwards;
+			font-family: 'Fira Sans', sans-serif;
+		}
+
+		#scroll span {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 24px;
+			height: 24px;
+			margin-left: -12px;
+			border-left: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-animation: sdb05 1.5s infinite;
+			animation: sdb05 1.5s infinite;
+			box-sizing: border-box;
+		}
+
+		@-webkit-keyframes sdb05 {
+			0% {
+				-webkit-transform: rotate(-45deg) translate(0, 0);
+				opacity: 0;
+			}
+
+			50% {
+				opacity: 1;
+			}
+
+			100% {
+				-webkit-transform: rotate(-45deg) translate(-20px, 20px);
+				opacity: 0;
+			}
+		}
+
+		@keyframes sdb05 {
+			0% {
+				transform: rotate(-45deg) translate(0, 0);
+				opacity: 0;
+			}
+
+			50% {
+				opacity: 1;
+			}
+
+			100% {
+				transform: rotate(-45deg) translate(-20px, 20px);
+				opacity: 0;
+			}
+		}
+
+		#team {
+			position: fixed;
+			animation: fadeIn 3s forwards;
+			z-index: 0;
+			bottom: -20px;
+			font-family: 'Fira Sans', sans-serif;
+			visibility: hidden;
+			font-size: 14px;
+		}
+
+		#heart {
+			color: red;
+			font-size: 1.5em;
+			vertical-align: middle;
+		}
+		#icon {
+			position: relative;
+			font-size: 28px;
+			letter-spacing: 10px;
+		}
+	</style>
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body>
+	<div class="cda-removeleft cda-naked cda-noimg demo-4">
+		<nav role='navigation'>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu"> 
+					<li><a href="#"><i class="material-icons" id="icon" style="font-size: 35px; top: 5px;">home</i>Home</a></li>
+					<li><a href="../Workshops/index.html"><i class="fas fa-tools" id="icon"></i>Workshops</a></li>
+					<li><a href="../Events/index.html" ><i class="material-icons" id="icon"  style="font-size: 35px; top: 5px;">emoji_events</i>Events</a></li>
+					<li><a href="../Pro shows/index.html"><i class="material-icons" id="icon">movie_filter</i>Pro-Shows</a></li>
+					<li><a href="../Tech-exhibition/index.html"><i class="material-icons" id="icon"  style="font-size: 35px; top: 5px;">color_lens</i>Tech Exhibition</a></li>
+					<li><a href="Portfolio_members/index.html"><li><i class="fas fa-users" id="icon"></i>Portfolio Members</li></li>
+					<li><a href="../Hackathon/index.html"><i class="fas fa-people-carry" id="icon"></i>Hackathon</a></li>       
+					<li><a href="../Hospitality/index.html"><i class="fas fa-bed" id="icon"></i>Accommodation</a></li>
+					<li><a href="../T-Shirt/index.html"><i class="fas fa-tshirt" id="icon"></i>T-Shirt</a></li>
+					<li><a href="../Sponsors/index.html"><i class="fas fa-donate" id="icon"></i>Sponsors</a></li>
+					<li><a href="../Reach us/index.html"><i class="fas fa-map-marked-alt" id="icon"></i>Reach us<a></li>
+					<li><a href="../login.php"><i class="fas fa-sign-in-alt" id="icon"></i>Login</a></li>  
+				  </ul>
+
+					<!--<div class="social_icons ">
+
+              <a href="https://www.facebook.com/gyanith.nitpy/" class="social_icons--link social_icons--link-facebook" target="_blank">
+                <svg class="social_icons--icon icon icon-facebook" fill="#3C5A99" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M20.9,2H3.1C2.5,2,2,2.5,2,3.1v17.8C2,21.5,2.5,22,3.1,22h9.6v-7.7h-2.6v-3h2.6V9c0-2.6,1.6-4,3.9-4c1.1,0,2.1,0.1,2.3,0.1v2.7l-1.6,0c-1.3,0-1.5,0.6-1.5,1.5v1.9h3l-0.4,3h-2.6V22h5.1c0.6,0,1.1-0.5,1.1-1.1V3.1C22,2.5,21.5,2,20.9,2z"/>
+                </svg>
+              </a>
+            
+              <a href="https://www.instagram.com/nitpy_gyanith/" class="social_icons--link social_icons--link-instagram" target="_blank">
+                <svg class="social_icons--icon icon icon-instagram" fill="#D93175" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12,3.8c2.7,0,3,0,4,0.1c1,0,1.5,0.2,1.9,0.3C18.4,4.4,18.7,4.6,19,5c0.3,0.3,0.6,0.7,0.7,1.1C19.9,6.5,20.1,7,20.1,8c0,1.1,0.1,1.4,0.1,4s0,3-0.1,4c0,1-0.2,1.5-0.3,1.9c-0.2,0.5-0.4,0.8-0.7,1.1c-0.3,0.3-0.7,0.6-1.1,0.7c-0.4,0.1-0.9,0.3-1.9,0.3c-1.1,0-1.4,0.1-4,0.1s-3,0-4-0.1c-1,0-1.5-0.2-1.9-0.3C5.6,19.6,5.3,19.4,5,19c-0.3-0.3-0.6-0.7-0.7-1.1C4.1,17.5,3.9,17,3.9,16c0-1.1-0.1-1.4-0.1-4s0-3,0.1-4c0-1,0.2-1.5,0.3-1.9C4.4,5.6,4.6,5.3,5,5c0.3-0.3,0.7-0.6,1.1-0.7C6.5,4.1,7,3.9,8,3.9C9,3.8,9.3,3.8,12,3.8 M12,2C9.3,2,8.9,2,7.9,2.1c-1.1,0-1.8,0.2-2.4,0.5C4.8,2.8,4.2,3.1,3.7,3.7C3.1,4.2,2.8,4.8,2.5,5.4C2.3,6.1,2.1,6.8,2.1,7.9C2,8.9,2,9.3,2,12c0,2.7,0,3.1,0.1,4.1c0,1.1,0.2,1.8,0.5,2.4c0.3,0.7,0.6,1.2,1.2,1.8c0.6,0.6,1.1,0.9,1.8,1.2c0.6,0.2,1.4,0.4,2.4,0.5C8.9,22,9.3,22,12,22s3.1,0,4.1-0.1c1.1,0,1.8-0.2,2.4-0.5c0.7-0.3,1.2-0.6,1.8-1.2c0.6-0.6,0.9-1.1,1.2-1.8c0.2-0.6,0.4-1.4,0.5-2.4c0-1.1,0.1-1.4,0.1-4.1s0-3.1-0.1-4.1c0-1.1-0.2-1.8-0.5-2.4c-0.3-0.7-0.6-1.2-1.2-1.8c-0.6-0.6-1.1-0.9-1.8-1.2c-0.6-0.2-1.4-0.4-2.4-0.5C15.1,2,14.7,2,12,2L12,2z"/>
+                <path d="M12,6.9c-2.8,0-5.1,2.3-5.1,5.1s2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1S14.8,6.9,12,6.9z M12,15.3c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3C15.3,13.8,13.8,15.3,12,15.3z"/>
+                <circle cx="17.3" cy="6.7" r="1.2"/>
+                </svg>
+              </a>
+            
+              <a href="https://www.youtube.com/channel/UCL8yfte7HZy_KGE-fckMsqQ" class="social_icons--link social_icons--link-youtube" target="_blank">
+                <svg class="social_icons--icon icon icon-youtube" fill="#CD201F" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M22.8,7.6c0,0-0.2-1.5-0.9-2.2c-0.8-0.9-1.8-0.9-2.2-0.9C16.6,4.3,12,4.3,12,4.3h0c0,0-4.6,0-7.7,0.2C3.9,4.5,2.9,4.5,2.1,5.4C1.4,6.1,1.2,7.6,1.2,7.6S1,9.4,1,11.2v1.7c0,1.8,0.2,3.6,0.2,3.6s0.2,1.5,0.9,2.2c0.8,0.9,1.9,0.8,2.4,0.9c1.8,0.2,7.5,0.2,7.5,0.2s4.6,0,7.7-0.2c0.4-0.1,1.4-0.1,2.2-0.9c0.7-0.7,0.9-2.2,0.9-2.2s0.2-1.8,0.2-3.6v-1.7C23,9.4,22.8,7.6,22.8,7.6z M9.7,14.9V8.7l5.9,3.1L9.7,14.9z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com/nitpygyanith" class="social_icons--link social_icons--link-twitter" target="_blank">
+                <svg class="social_icons--icon icon icon-twitter" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M7.9,20.9c8.3,0,12.8-6.9,12.8-12.8c0-0.2,0-0.4,0-0.6c0.9-0.6,1.6-1.4,2.3-2.3c-0.8,0.4-1.7,0.6-2.6,0.7c0.9-0.6,1.6-1.4,2-2.5c-0.9,0.5-1.8,0.9-2.9,1.1c-0.8-0.9-2-1.4-3.3-1.4c-2.5,0-4.5,2-4.5,4.5c0,0.4,0,0.7,0.1,1c-3.8-0.2-7.1-2-9.3-4.7C2.1,4.6,1.9,5.3,1.9,6.2c0,1.6,0.8,2.9,2,3.8c-0.7,0-1.4-0.2-2-0.6c0,0,0,0,0,0.1c0,2.2,1.6,4,3.6,4.4C5.1,13.9,4.7,14,4.3,14c-0.3,0-0.6,0-0.8-0.1C4,15.7,5.7,17,7.7,17C6.1,18.3,4.2,19,2.1,19c-0.4,0-0.7,0-1.1-0.1C3,20.2,5.4,20.9,7.9,20.9"/>
+                </svg>
+              </a>
+            </div>-->
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<div class="content">
+				<div id="app"></div>
+				<!---
+				lsdfsdfdsfdsfdsfsdfsdfsdf
+				sdfdsfdsfdsfdsfsdfdsfdsf
+				sdfdsfdsfdsfsdfdsfdsfsdf
+				sdfsdfsdfsdfsdfsdfsdfdsfsdfsdf
+				-->
+
+				<div class="content__title-wrap">
+					<h1 id="date" style="position: relative;top: 60%;"><center>NIT PUDUCHERRY<br>PRESENTS</center></h1>
+					<div class="word">GYANITH '20</div>
+					<img class="gyan_logo" src="../images/img_0.png">
+				</div>
+				<!--<a href="#section06" id="scroll"><span></span>Scroll</a>--><br>
+				<h4 id="team">Made with <span id="heart">❤</span> by <a href="Team Gyanith/Team Gyanith.html">Team 404</a> and
+					<a href="Team Gyanith/Team Gyanith.html#section-5">Design Team</a></h4>
+				<!--<div class="panel1" data-scroll-point="100">
+					<h1 class="panel">ABOUT NITPY</h1>
+					<p class="subpanel1">
+						The coast of Bay of Bengal witnessed the rise of a new era of technical education as one of India's
+						Institute of national importance, National Institute of Technology, Puducherry, got established in 2010, at
+						Karaikal. Karaikal, formerly known for its diverse culture and cuisines is now redefining the standards of
+						technical education.
+					</p>
+				</div>
+
+				<div class="panel2" id="panel2" data-scroll-point="300">
+					<h1 class="panelhead">ABOUT GYANITH</h1>
+					<h3 id="subpanel2">Gyanith, to us, is much more than our technical festival. It is the manifestation of our
+						collective dreams, ambitions, ideas and passion, all of it crammed into a power packed four days of
+						workshops, technical showcases, hackathons, quizzes and various other technical competitions. Not only that,
+						Gyanith also packs cultural presentations and various pro shows. The fest is as diverse as us NITians,
+						bustling with ideas from every corner of the nation. With every passing year, Gyanith grows in scale,
+						duration, diversity and ambition, alluring visitors from afar who wish to witness our techno spectacle. This
+						year the ambitious spirit towers more than ever, with a greater number and rich diversity of workshops and
+						events from all the departments, covering every cutting edge niche of the tech industry. Wherever your
+						interests lie, we sure got you covered. Come join us for our energetic and informative techno carnival.</h3>
+				</div>
+				<div class="panel3">
+					<h1 class="panelhead">HISTORY OF GYANITH</h1>
+					<h3 class="subpanel3">
+						NIT Puducherry is famous for its advancements made in technical fields and a major contribution is done
+						through the Institute's proudest event, Gyanith. Since it's inception in 2017, Gyanith is setting up a new
+						benchmark every year, in the number of events as well as in the number of participants. Spreading its fame
+						across Puducherry, Tamil Nadu, and Kerala, Gyanith is now ready to be India's largest sought technical
+						platform, with its.. 4th edition, where it comes up with more events, newer and better! After the curtain
+						raiser of Gyanith '20, the highlights are many workshops on hot and trending topics in technical fields,
+						handled by the person of expertise from the respective areas. Apart from the technical events, Gyanith is a
+						platform to bring up young and talented brains from the school benches through its science expos and project
+						expos areawaiting the students pursuing undergraduate and higher degrees. Also with a big fat stage with non
+						restricting mike, we welcome all the proficient performers to come and entertain our great audience through
+						our non technical events.Gyanith '20 is this undoubtedly, a great opportunity to showcase and widen your
+						vistas of knowledge.
+					</h3>
+
+				</div>-->
+
+			</div>
+
+	</div>
+
+	</div>
+	</main>
+	</div>
+
+
+	<script type="text/javascript">
+
+		/*
+		
+		var arr = [];
+$('.panel').each(function(i) {
+arr.push($(this).data("scroll-point"));
+});
+
+$(window).scroll(function() {
+var scrollTop = $(window).scrollTop();
+elementFade(scrollTop);
+
+});
+
+elementFade = function(top) {
+for (var i = 0; i < arr.length; i++) {
+	var min = arr[i];
+	var max = i != (arr.length - 1) ? arr[i + 1] : (arr[i] + 100);
+	if (top >= min && top < max) {
+		if(i-1>=0)
+	$('data-scroll-point="' + arr[i-1]+"]").fadeOut(400);
+		$('[data-scroll-point="' + arr[i] + '"]').fadeIn(800);
+		$('p.info').html($('[data-scroll-point="' + arr[i] + '"]').html() + " visible at point " + arr[i]);
+	}
+}
+
+
+}*/
+		function gototop() {
+			window.scrollTo(0, 0);
+			callPlayer("panel2", "pauseVideo")
+			play = false;
+		}
+
+		function callPlayer(frame_id, func, args) {
+			if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id;
+			var iframe = document.getElementById(frame_id);
+			if (iframe && iframe.tagName.toUpperCase() != 'IFRAME') {
+				iframe = iframe.getElementsByTagName('iframe')[0];
+			}
+			if (iframe) {
+				// Frame exists, 
+				iframe.contentWindow.postMessage(JSON.stringify({
+					"event": "command",
+					"func": func,
+					"args": args || [],
+					"id": frame_id
+				}), "*");
+			}
+		}
+
+		callPlayer("panel2", "pauseVideo")
+		$(window).on('beforeunload', function () {
+			$(window).scrollTop(0);
+		});
+		var play = true;
+		setTimeout(function () {
+			$("#scroll").fadeIn();
+			callPlayer("panel2", "pauseVideo")
+		}, 2500);
+		$(window).scroll(function (e) {
+
+
+			if ($(this).scrollTop() < 200) {
+				$('.panel').fadeOut();
+				$('.subpanel1').fadeOut();
+				$('.panel2').fadeOut();
+
+				$('.content__title-wrap').fadeIn();
+				$("#scroll").fadeIn();
+
+			}
+			if ($(this).scrollTop() > 200 && $(this).scrollTop() < 400) {
+				document.getElementById('counter').style.display = "block";
+
+				$('.content__title-wrap').fadeOut();
+				$('.panel').fadeOut();
+				$('.subpanel1').fadeOut();
+				$('.panel2').fadeOut();
+
+			}
+
+			if ($(this).scrollTop() > 400 && $(this).scrollTop() < 500) { // choose the value you want.
+				console.log($(this).scrollTop());
+				$('.content__title-wrap').fadeOut();
+				$('.subpanel1').fadeOut();
+
+				$('.panel2').fadeOut();
+				$('.panel').fadeIn();
+
+
+
+			}
+			if ($(this).scrollTop() > 500 && $(this).scrollTop() < 1200) {
+
+				play = false;
+
+				//callPlayer("panel2","pauseVideo");
+				$('.content__title-wrap').fadeOut();
+				$('.panel').fadeIn();
+
+				$('.panel2').fadeOut();
+				$('.subpanel1').fadeIn();
+				console.log(play);
+
+
+
+			}
+			if ($(this).scrollTop() > 1200 && $(this).scrollTop() <= 1500) {
+
+				$('.content__title-wrap').fadeOut();
+				console.log($(this).scrollTop());
+
+
+
+
+				$('.subpanel1').fadeOut();
+				$('.panel').fadeOut();
+
+				$('.panel3').fadeOut();
+				$('.panel2').fadeIn();
+
+			}
+			if ($(this).scrollTop() > 1500 && $(this).scrollTop() <= 1600) {
+				$("#scroll").fadeOut();
+				$('.panel2').fadeOut();
+			}
+			if ($(this).scrollTop() > 1600) {
+				$('.subpanel1').fadeOut();
+				$('.panel').fadeOut();
+				$('.panel2').fadeOut();
+				$('.panel3').fadeIn();
+			}
+
+		});
+
+	</script>
+
+
+
+
+
+	<script src="js/three.min.js"></script>
+	<script src="js/postprocessing.min.js"></script>
+	<script src="js/InfiniteLights.js"></script>
+	<script src="js/Distortions.js"></script>
+	<script src="js/background.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+	<script src="js/glitch.js"></script>
+	<!--script-- src="js/header.js"></!--script-->
+	<script>
+		$(document).ready(function () {
+			setTimeout(function () {
+				$(".social_icons").css("visibility", "visible");
+				$(".social_icons").addClass("slideRight")
+			}, 2000);
+			setTimeout(function () {
+				$("#date").css("display", "block");
+				$("#date").addClass("slideDown")
+			}, 2000);
+
+
+		});
+
+
+		$(document).ready(function () {
+			setTimeout(function () {
+				$(".word").css("visibility", "visible")
+			}, 3500);
+		});
+
+		$(document).ready(function () {
+			setTimeout(function () {
+				$(".gyan_logo").css("visibility", "visible")
+				$(".gyan_logo").addClass("fadeIn")
+			}, 3000);
+		});
+
+		$(document).ready(function () {
+			setTimeout(function () {
+				$("nav").css("visibility", "visible")
+			}, 100);
+		});
+
+		$(document).ready(function () {
+			setTimeout(function () {
+				$("#counter").css("visibility", "visible")
+			}, 500);
+		});
+
+		$(document).ready(function () {
+			setTimeout(function () {
+				$("#scroll").css("visibility", "visible")
+			}, 500);
+		});
+
+		$(document).ready(function () {
+			setTimeout(function () {
+				$("#team").css("visibility", "visible")
+			}, 500);
+		});
+
+		$(document).ready(function () {
+			$('body').css('display', 'none');
+			$('body').fadeIn(3000);
+
+		});
+
+
+	</script>
+</body>
+
+
+</html>

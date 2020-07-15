@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Jockey+One&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 500;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+  .word {
+  bottom: 0;
+  color: #fff;
+  font-size: 100px;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  margin: auto;
+  right: 0;
+  bottom: 50%;
+  position: relative;
+}
+
+.word span {
+  display: inline-block;
+  transform: translateX(100%) scale(0.9);
+  transition: transform 500ms;
+}
+
+.word .done {
+  color: #fff;
+  transform: translateX(0) scale(1);
+}

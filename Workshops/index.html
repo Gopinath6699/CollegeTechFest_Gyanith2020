@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/header.css">
+	<script src="js/header.js"></script> 
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+
+	<title>Gyanith '20 - Workshops</title>
+	<link rel="shortcut icon" href="images/img_0.png">
+	<script type="text/javascript">
+		if (screen.width <= 700) {
+		document.location = "Mobile_index.html";
+		}
+		
+		</script>
+	<style>
+	#particle-canvas {
+		position: fixed;
+		width: 100%;
+		height: 150vh;
+		background: linear-gradient(to bottom, rgb(10, 10, 50) 0%,rgb(60, 10, 60) 100%);
+		vertical-align: middle;
+		z-index: -1;
+	}
+	@-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+		 }
+		 
+		 #back_button{
+			 position: absolute;
+			 top:30%;
+			 left: 5%;
+			 color: white;
+			 font-size: 35px;
+		 }
+		 #short_desc{
+			font-size: 20px; 
+			font-family: 'PT Sans', sans-serif;
+			color: black;
+		 }
+		.powerplay{
+			position: absolute; 
+			background: rgb(0, 0, 0);
+			background: rgba(0, 0, 0, 0.5); /* Black see-through */
+			color: #f1f1f1; 
+			width: 110%;
+			bottom: -4%;
+			left: -5%;
+			transition: .5s ease;
+			opacity: 0;
+			color: white;
+			font-size: 20px;
+			padding: 21px;
+			text-align: center;
+		 }
+
+		 .cd-trigger:hover .powerplay {
+			opacity: 1;
+		}
+
+		.cd-item img{
+			-webkit-transition: 0.4s ease;
+			transition: 0.4s ease;
+		}
+
+		.cd-item:hover img{
+			-webkit-transform: scale(1.08);
+  			transform: scale(1.08);
+		}
+
+		#title{
+			position: absolute;
+			font-size: 68px;
+			right: 0;
+			left: 0;
+			color: white;
+			text-align: center;
+		}
+
+		#sub_title{
+			position: relative;
+			top: 18%;
+			text-align: left;
+			font-size: 55px;
+		}
+		.subtitle{
+			margin: auto;
+			width: 90%;
+			max-width: 1170px;
+		}
+		nav ul li a{
+			font-size: 28px;
+			color: white;
+		}
+	</style>
+
+</head>
+<body>
+	<canvas id="particle-canvas"></canvas>
+	<header class="head">
+		<div class="menu-toggle" id="hamburger">
+			<i class="fas fa-bars"></i>
+		  </div>
+		  <div class="overlay"></div>
+		  <div class="container">
+			<nav>
+			  <ul>
+				<li><a href="../index2.html">HOME</a></li>
+				<li><a href="#">WORKSHOPS</a></li>
+				<li><a href="../Events/index.html">EVENTS</a></li>
+				<li><a href="../Pro shows/index.html">PRO SHOWS</a></li>
+				<li><a href="../Hospitality/index.html">ACCOMMODATION</a></li>
+				<!--<li><a href="../T-Shirt/index.html">T-SHIRT</a></li>-->
+				<li><a href="../Reach us/index.html">REACH US</a></li>
+			  </ul>
+			</nav>
+		  </div>
+		  <a href="../index2.html"><i class="fas fa-arrow-left" id="back_button"></i></a>
+	</header>
+	<h1 id="title">WORKSHOPS</h1>
+	<header class="subtitle">
+		<h1 id="sub_title">CSE</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/1.jpg" class="cd-img"  alt="Item Preview" id = "w1" onClick="changeContent(this.id)" >
+			<a href="#0" class="cd-trigger powerplay" id = "w1" onClick="changeContent(this.id)" >Computer Vision Using OpenCV</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/7.jpg" class="cd-img" alt="Item Preview" id = "w7" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w7" onClick="changeContent(this.id)">Natural Language Processing</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/3.jpg" class="cd-img" alt="Item Preview" id = "w3" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w3" onClick="changeContent(this.id)">Angular Web App Development</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/10.jpg" class="cd-img" alt="Item Preview" id = "w10" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w10" onClick="changeContent(this.id)">Data science and python </a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/12.jpg" class="cd-img" alt="Item Preview" id = "w12" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w12" onClick="changeContent(this.id)">Ethical Hacking</a>
+		</li> <!-- cd-item -->
+		
+	</ul> 
+
+	<header class="subtitle">
+		<h1 id="sub_title">EEE</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/2.jpg" class="cd-img" alt="Item Preview" id = "w2" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w2" onClick="changeContent(this.id)" >Hybrid and Electric Vehicle</a>
+		</li> <!-- cd-item -->
+
+		<!--<li class="cd-item">-->
+		<!--	<img src="img/9.jpg" class="cd-img" alt="Item Preview" id = "w9" onClick="changeContent(this.id)">-->
+		<!--	<a href="#0" class="cd-trigger powerplay" id = "w9" onClick="changeContent(this.id)">Humanoid Robotics</a>-->
+		<!--</li> <!-- cd-item -->-->
+
+		<li class="cd-item">
+			<img src="img/13.jpg"  class="cd-img" alt="Item Preview" id = "w13" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w13" onClick="changeContent(this.id)">Data Acquisition using LabView</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	
+
+	<header class="subtitle">
+		<h1 id="sub_title">ECE</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/5.jpg"  class="cd-img" alt="Item Preview" id = "w5" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w5" onClick="changeContent(this.id)">Quadcopter Designing</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/11.jpg" class="cd-img" alt="Item Preview" id = "w11" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w11" onClick="changeContent(this.id)">Embedded Robotics & IOT</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">MECH</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/6.jpg"  class="cd-img" alt="Item Preview" id = "w6" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w6" onClick="changeContent(this.id)">CATIA V5</a>
+		</li> <!-- cd-item -->
+
+		<!--<li class="cd-item">-->
+		<!--	<img src="img/8.jpg" class="cd-img" alt="Item Preview" id = "w8" onClick="changeContent(this.id)">-->
+		<!--	<a href="#0" class="cd-trigger powerplay" id = "w8" onClick="changeContent(this.id)">Mercedes Benz Engine</a>-->
+		<!--</li> <!-- cd-item -->-->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">CIVIL</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/4.jpg" alt="Item Preview"  class="cd-img" id = "w4" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w4" onClick="changeContent(this.id)" >STAAD Pro</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">Photography Club</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/15.jpg" alt="Item Preview"  class="cd-img" id = "w15" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w4" onClick="changeContent(this.id)" >APERTURE</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">Innovation Club</h1>
+	</header>
+	<ul class="cd-items cd-container" >
+		<li class="cd-item">
+			<img src="img/16.jpg" alt="Item Preview"  class="cd-img" id = "w16" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger powerplay" id = "w16" onClick="changeContent(this.id)" >BUSINESS MODEL CANVAS</a>
+		</li> <!-- cd-item -->
+	</ul>
+	<!-- cd-items -->
+	<div class="cd-quick-view">
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider">
+				<li class="selected"><img src="" alt="Product 1" id="img"></li>
+			</ul> <cd-slider>
+
+			<!--ul class="cd-slider-navigation">
+				<li><a class="cd-next" href="#0">Prev</a></li>
+				<li><a class="cd-prev" href="#0">Next</a></li>
+			</!--ul> <cd-slider-navigation>
+		</div> <cd-slider-wrapper-->
+
+		<div class="cd-item-info">
+			<h2 id = "pname"></h2>
+			<p id = "dname"></p>
+
+			<ul class="cd-item-action">
+				<li><button class="add-to-cart" id="regbut">Register</button></li>
+				<li><a id = "wlink" href="learn_more.php">Learn more</a></li>
+			</ul> <!-- cd-item-action -->
+			
+			
+		</div> <!-- cd-item-info -->
+		<a href="#0" class="cd-close">Close</a>
+	</div> <!-- cd-quick-view -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/background.js"></script> <!-- Resource jQuery -->
+<script>
+
+$(document).ready(function(){
+				$('body').css('display', 'none');
+				$('body').css('background', 'black');
+				$('body').fadeIn(1000);
+	
+			});
+
+function vis()
+{
+	
+var im= document.getElementsByClassName("selected");
+im[0].style.visibility = "hidden";
+
+}
+
+function close()
+{
+	var im= document.getElementsByClassName("selected");
+im[0].style.visibility = "visible";
+}
+var img  = document.getElementById("img");
+var Title = document.getElementById("pname");
+var Desc = document.getElementById("dname");
+var clickHandler = function(evt){
+  location.href = "../register.php?type=w&id="+evt.target.cl;
+};
+function changeContent(clicked)
+{	
+    document.getElementById("regbut").cl = clicked;
+    document.getElementById("regbut").addEventListener("click",clickHandler,false);
+	document.getElementById("wlink").href="learn_more.php" + "?id=" + clicked;
+	if(clicked == "w1")
+	{
+		img.src="img/1.jpg";
+		Title.innerHTML = "Computer Vision Using OpenCV";
+		Desc.innerHTML = '<span id="short_desc">Vision with thougths</span><br><span id="short_desc">Date: 5th and 6th March</span><br><span id="short_desc">Venue: LH-SF-3</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0">learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>';
+	}
+	if(clicked == "w2")
+	{
+		img.src="img/2.jpg";
+		Title.innerHTML = "Hybrid and Electric Vehicle (H.EV.)";
+		Desc.innerHTML = '<span id="short_desc"></span><br><span id="short_desc">Date: 6th and 7th March</span><br><span id="short_desc">Venue: LH-FF-2</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0">learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller </span> ';
+	}
+	if(clicked == "w3")
+	{
+		img.src= "img/3.jpg";
+		Title.innerHTML = "Angular Web App Development";
+		Desc.innerHTML = '<span id="short_desc"></span><span id="short_desc">Date: 5th and 6th March</span><br><span id="short_desc">Venue: LH-FF-3</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w4")
+	{
+		img.src="img/4.jpg";
+		Title.innerHTML = "STAAD Pro";
+		Desc.innerHTML = '<br><span id="short_desc">Date: 6th and 7th March</span><br><span id="short_desc">Venue: LH-FF-5</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w5")
+	{
+		img.src="img/5.jpg";
+		Title.innerHTML = "Quadcopter Designing";
+		Desc.innerHTML = '<span id="short_desc"></span><span id="short_desc">Date: 5th and 6th March</span><br><span id="short_desc">Venue: LH-FF-6</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w6")
+	{
+		img.src="img/6.jpg";
+		Title.innerHTML = "CATIA V5";
+		Desc.innerHTML = '<span id="short_desc">Ideas are 3D…. Why not the presentations? </span><br><span id="short_desc">Date: 5th and 6th March</span><br><span id="short_desc">Venue: LH-SF-1</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w7")
+
+	{
+		img.src="img/7.jpg";
+		Title.innerHTML = "Natural Language Processing";
+		Desc.innerHTML = '<span id="short_desc">Let your Computer do all the talking</span><br><span id="short_desc">Date: 6th and 7th March</span><br><span id="short_desc">Venue: LH-SF-5</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w8")
+	{
+		img.src="img/8.jpg";
+		Title.innerHTML = "Mercedes Benz Engine by WingfoTech";
+		Desc.innerHTML = '<span id="short_desc">Date: 4th and 5th March</span><br><span id="short_desc">Venue: GF-02 (Admin Block)</span><br><span id="short_desc">Time Slot: <br>9:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w9")
+	{
+		img.src="img/9.jpg";
+		Title.innerHTML = "Humanoid Robotics by WingfoTech";
+		Desc.innerHTML = '<span id="short_desc">Date: 4th and 5th March</span><br><span id="short_desc">Venue: GF-01 (Admin Block)</span><br><span id="short_desc">Time Slot: <br>9:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w10")
+	{
+		img.src="img/10.jpg";
+		Title.innerHTML = "Data science and python by Edufabrica";
+		Desc.innerHTML = '<span id="short_desc">Date: 7th and 8th March</span><br><span id="short_desc">Venue: GF-01 (Admin Block)</span><br><span id="short_desc">Time Slot: <br>9:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w11")
+	{
+		img.src="img/11.jpg";
+		Title.innerHTML = "Embedded Robotics & IOT by Edufabrica";
+		Desc.innerHTML = '<span id="short_desc">Date: 7th and 8th March</span><br><span id="short_desc">Venue: GF-02 (Admin Block)</span><br><span id="short_desc">Time Slot: <br>9:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w12")
+	{
+		img.src="img/12.jpg";
+		Title.innerHTML = "Ethical Hacking and Cyber Security &#8196 by Edufabrica";
+		Desc.innerHTML = '<span id="short_desc">Date: 7th and 8th March</span><br><span id="short_desc">Venue: LH-SF-7</span><br><span id="short_desc">Time Slot: <br>9:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w13")
+	{
+		img.src="img/13.jpg";
+		Title.innerHTML = "Data Acquisition using Labview";
+		Desc.innerHTML = '<span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: GF-02 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w15")
+	{
+		img.src="img/15.jpg";
+		Title.innerHTML = "Aperture: Photography";
+		Desc.innerHTML = '<span id="short_desc">Date: 6th and 7th March</span><br><span id="short_desc">Venue: LH-SF-6</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+	if(clicked == "w16")
+	{
+		img.src="img/16.jpg";
+		Title.innerHTML = "Business model canvas";
+		Desc.innerHTML = '<span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: GF-01 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 8:30 AM to 12:30 PM <br> 1:30 PM to 4:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+	}
+}
+	</script>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</body>
+</html>

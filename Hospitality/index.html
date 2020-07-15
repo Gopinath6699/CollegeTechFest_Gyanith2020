@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"><!--  Resource style -->
+  <link rel="stylesheet" type="text/css" href="css/swirl.css" />
+  <link rel="stylesheet" href="learn_more.css">
+    <link rel="stylesheet" type="text/css" href="css/coalesce.css" />
+  <title>Gyanith '20 - Hospitality</title>
+  <link rel="shortcut icon" href="images/img_0.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style>
+    #back_button{
+      position: absolute;
+      top: 6.5%;
+      left: 5%;
+      color: white;
+      font-size: 35px;
+      z-index: 1;
+    }
+    body {
+        margin: 0px 0px;
+        font: 'PT Sans', sans-serif;
+        color: white;
+      }
+      
+      h1{
+        text-align: center;
+        top: 6%;
+        width: 700px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 45px;
+        font-weight: bolder;
+      }
+      p{
+        font-size: 15px;
+      }
+ </style>
+</head>
+
+<body >
+  <i class="fas fa-arrow-left" id="back_button" onclick="goBack()"></i>
+  <main>
+    <div class="frame">
+      <div class="content content--canvas">
+        <h2 class="content__title"></h2>
+      </div>
+  </main>
+  <h1>ACCOMMODATION</h1>
+  <div class="tabbed">
+    <input type="radio" name="tabs" id="tab-nav-1" checked>
+    <label for="tab-nav-1" id="tab1">DESCRIPTION</label>
+    <input type="radio" name="tabs" id="tab-nav-2">
+    <label for="tab-nav-2">CONTACT US</label>
+    <input type="radio" name="tabs" id="tab-nav-3">
+    <label for="tab-nav-3">BOOK NOW</label>
+    <input type="radio" name="tabs" id="tab-nav-4">
+    <!--label-- for="tab-nav-4">Output</!--label-->
+    <div class="tabs">
+      <div><h2><center>DESCRIPTION</center></h2><br>
+        <p style="font-size: 24px;">Caution Deposit has to be paid while check-in and will be refunded at check-out. Dates of accomodation and check-in time has to be mailed to 'admin@gyanith.org' with the personal details and Ticket Number given after payment.</p><br>
+      </div>
+      <div><h2><center>CONTACT US</center></h2><br><p style="font-size: 24px;">In case of any Queries or for Registration, feel free to contact us :</p><br>
+        <!--<p>Abhimanyu</p>
+        <p>Email : abhimanyukrsingh00@gmail.com</p>
+        <p>Phone : +91-7004695034</p><br>
+        <p>Peera Sahib</p>
+        <p>Phone : +91-8309366892</p><br>
+        <p>Ohm Trivedi</p>-->
+        <p style="font-size: 20px;">Coming Soon</p></div>
+      <div><h2><center></center></h2><br>
+        <h3>Caution Deposit - Rs.200/-</h3>
+        <h3>One Day - Rs.300/-</h3>
+        <h3>Two Days - Rs.500/-</h3>
+        <h3>Three Days - Rs.600/-</h3>
+        <h3>Four Days - Rs.800/-</h3><br><br>
+        <a href="https://www.thecollegefever.com/events/burnout-IgVj9eUqG6"><button class="btn">Book now</button></a></div>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/noise.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/swirl.js"></script>
+  <script>
+    function vis() {
+
+      var im = document.getElementsByClassName("selected");
+      im[0].style.visibility = "hidden";
+
+    }
+    function close() {
+      var im = document.getElementsByClassName("selected");
+      im[0].style.visibility = "visible";
+
+    }
+  </script>
+  </div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+
+</html>

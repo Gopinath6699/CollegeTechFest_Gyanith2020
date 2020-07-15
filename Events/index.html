@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=" width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"><!--  Resource style -->
+	<link rel="stylesheet" type="text/css" href="css/coalesce.css" />
+	<link rel="stylesheet" href="css/header.css">
+	<script src="js/header.js"></script> 
+	<title>Gyanith '20 - Events</title>
+	<link rel="shortcut icon" href="images/img_0.png">
+	<script type="text/javascript">
+		if (screen.width <= 700) {
+		document.location = "Mobile_index.html";
+		}
+		
+		</script>
+
+	<style>
+		.cd-img {
+			cursor: pointer;
+		}
+		 #back_button{
+			 position: absolute;
+			 top:8%;
+			 left: 5%;
+			 color: white;
+			 font-size: 35px;
+			 z-index: 2;
+		 }
+		 #desc{
+		 	opacity: 0;
+		 }
+		  #short_desc{
+			font-size: 20px; 
+			font-family: 'PT Sans', sans-serif;
+			color: black;
+		 }
+		 
+		.cd-item a{
+		position: absolute; 
+		background: rgba(0, 0, 0, 0.5); /* Black see-through */
+		color: #f1f1f1; 
+		width: 110%;
+		bottom: -4%;
+		left: -5%;
+		transition: .5s ease;
+		opacity: 0;
+		color: white;
+		font-size: 20px;
+		padding: 2px;
+		text-align: center;
+		}
+
+		.cd-item:hover a {
+		opacity: 1;
+		}
+
+		.cd-item img{
+			-webkit-transition: 0.4s ease;
+			transition: 0.4s ease;
+		}
+
+		.cd-item:hover img{
+			-webkit-transform: scale(1.08);
+  			transform: scale(1.08);
+		}
+
+		#title{
+			position: absolute;
+			font-size: 68px;
+			right: 0;
+			left: 0;
+			color: white;
+			text-align: center;
+		}
+
+		#sub_title{
+			position: relative;
+			top: 18%;
+			text-align: left;
+			font-size: 55px;
+		}
+		.subtitle{
+			margin: auto;
+			width: 90%;
+			max-width: 1170px;
+		}
+		nav ul li a{
+			font-size: 28px;
+			color: white;
+		}
+	</style>
+</head>
+
+<body class="demo-4">
+	<a href="../index2.html"><i class="fas fa-arrow-left" id="back_button"></i></a>
+	<main>
+		<div class="frame">
+		<div class="content content--canvas">
+			<h2 class="content__title"></h2>
+		</div>
+	</main>
+	<header class="head">
+		<div class="menu-toggle" id="hamburger">
+			<i class="fas fa-bars"></i>
+		  </div>
+		  <div class="overlay"></div>
+		  <div class="container">
+			<nav>
+			  <ul>
+				<li><a href="../index2.html">HOME</a></li>
+				<li><a href="../Workshops/index.html">WORKSHOPS</a></li>
+				<li><a href="#">EVENTS</a></li>
+				<li><a href="../Pro shows/index.html">PRO SHOWS</a></li>
+				<li><a href="../Hospitality/index.html">ACCOMMODATION</a></li>
+				<!--<li><a href="../T-Shirt/index.html">T-SHIRT</a></li>-->
+				<li><a href="../Reach us/index.html">REACH US</a></li>
+			  </ul>
+			</nav>
+		  </div>
+	</header>
+	<header >
+		<h1>TECHNICAL EVENTS</h1>
+	</header >
+
+	<header class="subtitle">
+		<h1 id="sub_title">CSE</h1>
+	</header>
+	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img class="cd-img" src="img/9.jpg" alt="Item Preview" id = "e9" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e9" onClick="changeContent(this.id)">D Bug C Bug</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/10.jpg" alt="Item Preview" id = "e10" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e10" onClick="changeContent(this.id)">Web Design</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/11.png" alt="Item Preview" id = "e11" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e11" onClick="changeContent(this.id)">Hackathon</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/26.jpg" class="cd-img" alt="Item Preview" id = "e26" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e26" onClick="changeContent(this.id)">Qwery</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">Civil</h1>
+	</header>
+	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img class="cd-img" src="img/5.jpg" alt="Item Preview" id = "e5" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e5" onClick="changeContent(this.id)">Brick it</a>
+		</li> <!-- cd-item -->
+		
+		<li class="cd-item">
+			<img class="cd-img" src="img/6.jpg" alt="Item Preview" id = "e6" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e6" onClick="changeContent(this.id)">Shake it</a>
+		</li> <!-- cd-item -->
+
+			
+		<li class="cd-item">
+			<img class="cd-img" src="img/7.jpg" alt="Item Preview" id = "e7" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e7" onClick="changeContent(this.id)">CAD it</a>
+		</li> <!-- cd-item -->
+
+			
+		<li class="cd-item">
+			<img class="cd-img" src="img/8.jpg" alt="Item Preview" id = "e8" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e8" onClick="changeContent(this.id)">Float it</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">Mechanical</h1>
+	</header>
+		<ul class="cd-items cd-container">
+			<li class="cd-item">
+				<img class="cd-img" src="img/1.jpg" alt="Item Preview" id = "e1" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e1" onClick="changeContent(this.id)">Burnout</a>
+			</li> <!-- cd-item -->
+	
+				
+			<li class="cd-item">
+				<img class="cd-img" src="img/2.jpg" alt="Item Preview" id = "e2" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e2" onClick="changeContent(this.id)">Robo Sumo</a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item">
+				<img class="cd-img" src="img/3.jpg" alt="Item Preview" id = "e3" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e3" onClick="changeContent(this.id)">Offset Mark#2</a>
+			</li> <!-- cd-item -->
+
+			<li class="cd-item">
+				<img class="cd-img" src="img/4.jpg" alt="Item Preview" id = "e4" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e4" onClick="changeContent(this.id)">Enfield March</a>
+			</li> <!-- cd-item -->
+
+			<!--<li class="cd-item">
+				<img class="cd-img" src="img/4.jpg" alt="Item Preview" id = "e4" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e4" onClick="changeContent(this.id)">Enfield March</a>
+			</li> --><!-- cd-item -->
+
+		</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">Innovation Club</h1>
+	</header>
+	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img class="cd-img" src="img/12.png" alt="Item Preview" id = "e12" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e12" onClick="changeContent(this.id)">Science Expo</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/13.png" alt="Item Preview" id = "e13" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e13" onClick="changeContent(this.id)">Project Expo</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/14.jpg" alt="Item Preview" id = "e14" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e14" onClick="changeContent(this.id)">Avishkar</a>
+		</li> <!-- cd-item -->
+	</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">ECE</h1>
+	</header>
+		<ul class="cd-items cd-container">
+			<li class="cd-item">
+				<img class="cd-img" src="img/15.jpg" alt="Item Preview" id = "e15" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e15" onClick="changeContent(this.id)">Tik Tik Tik</a>
+			</li> <!-- cd-item -->
+	
+			<!--<li class="cd-item">
+				<img class="cd-img" src="img/16.jpg" alt="Item Preview" id = "e16" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e16" onClick="changeContent(this.id)">Control It</a>
+			</li> --><!-- cd-item -->
+
+			<li class="cd-item">
+				<img class="cd-img" src="img/17.jpg" alt="Item Preview" id = "e17" onClick="changeContent(this.id)">
+				<a href="#0" class="cd-trigger " id = "e17" onClick="changeContent(this.id)">LineX</a>
+			</li> <!-- cd-item -->
+		</ul>
+
+	<header class="subtitle">
+		<h1 id="sub_title">EEE</h1>
+	</header>
+	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img class="cd-img" src="img/18.jpg" alt="Item Preview" id = "e18" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e18" onClick="changeContent(this.id)">Task Master</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/19.jpg" alt="Item Preview" id = "e19" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e19" onClick="changeContent(this.id)">Robo Soccer</a>
+		</li> <!-- cd-item -->
+	</ul>
+	
+	<header>
+		<h1>NON-TECHNICAL EVENTS</h1>
+	</header>
+	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img class="cd-img" src="img/20.jpg" alt="Item Preview" id = "e20" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e20" onClick="changeContent(this.id)">Carro Quiz</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/21.jpg" alt="Item Preview" id = "e21" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e21" onClick="changeContent(this.id)">Gaming</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img class="cd-img" src="img/23.jpg" alt="Item Preview" id = "e23" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e23" onClick="changeContent(this.id)">Online Events</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/24.jpg" class="cd-img" alt="Item Preview" id = "e24" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e24" onClick="changeContent(this.id)">Pixel Craft</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/25.jpg"  class="cd-img" alt="Item Preview" id = "e25" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e25" onClick="changeContent(this.id)">Novo Initio</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/27.jpg"  class="cd-img" alt="Item Preview" id = "e27" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e27" onClick="changeContent(this.id)">Face Painting</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/28.jpg"  class="cd-img" alt="Item Preview" id = "e28" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e28" onClick="changeContent(this.id)">Tatoo Making</a>
+			
+		</li> <!-- cd-item -->
+		<li class="cd-item">
+			<img src="img/item-1.jpg"  class="cd-img" alt="Item Preview" id = "e29" onClick="changeContent(this.id)">
+			<a href="#0" class="cd-trigger " id = "e29" onClick="changeContent(this.id)">Treasure Hunt</a>
+			
+		</li>
+
+	</ul> <!-- cd-items -->
+	<div class="cd-quick-view">
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider">
+				<li class="selected"><img class="cd-img" src="" alt="Product 1" id="img"></li>
+			</ul> 
+
+		</div> <!--cd-slider-wrapper-->
+
+			<div class="cd-item-info">
+				<p id = "pname"></p>
+				<p id = "dname"></p>
+	
+				<ul class="cd-item-action">
+					<li><button class="add-to-cart" id="regbut">Register</button></li>
+					<li><a id = "elink" href="learn_more.php">Learn more</a></li>
+				</ul> <!-- cd-item-action -->
+				
+				
+			</div> <!-- cd-item-info -->
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-quick-view -->
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/velocity.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/noise.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/coalesce.js"></script>
+		<style>
+		.cd-slider-wrapper
+		{
+			padding-right: 10px;
+		}
+		.cd-item-info p {
+			margin:20px 0;
+		}
+
+		#dname
+		{
+		margin-right: 30px;
+
+		}
+
+		#pname{
+			font-size: 28px;
+			font-family: 'Bebas Neue', cursive;
+    		color: #3e585f;
+		}
+	</style>
+		<script>
+			$(document).ready(function(){
+				$('body').css('display', 'none');
+				$('body').css('background', 'black');
+				$('body').fadeIn(1000);
+	
+			});
+
+			function vis() {
+
+				var im = document.getElementsByClassName("selected");
+				im[0].style.visibility = "hidden";
+
+			}
+			function close() {
+				var im = document.getElementsByClassName("selected");
+				im[0].style.visibility = "visible";
+
+			}
+			var img  = document.getElementById("img");
+			var Title = document.getElementById("pname");
+			var Desc = document.getElementById("dname");
+    var clickHandler = function(evt){
+  location.href = "../register.php?type=e&id="+evt.target.cl;
+};
+		function changeContent(clicked){	
+            document.getElementById("regbut").cl = clicked;
+            document.getElementById("regbut").addEventListener("click",clickHandler,false);
+			document.getElementById("elink").href="learn_more.php" + "?id=" + clicked;
+			if(clicked == "e1")
+			{
+				img.src="img/1.jpg";
+				Title.innerHTML = "Burnout";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 4th March</span><br><span id="short_desc">Venue: Outside SCB</span><br><span id="short_desc">Time Slot: <br> 3:00 PM to 5:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span> ';
+			}
+			if(clicked == "e2")
+			{
+				img.src="img/2.jpg";
+				Title.innerHTML = "Robo Sumo";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th and 6th March</span><br><span id="short_desc">Venue: GF-04 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 1:00 PM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e3")
+			{
+				img.src= "img/3.jpg";
+				Title.innerHTML = "Offset Mark#2";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: Mech Lab</span><br><span id="short_desc">Time Slot: <br> 10:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e4")
+			{
+				img.src="img/4.jpg";
+				Title.innerHTML = "Enfield March";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: College Road</span><br><span id="short_desc">Time Slot: <br> 11:00 AM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e5")
+			{
+				img.src="img/5.jpg";
+				Title.innerHTML = "Brick it";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: Behind SCB</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e6")
+			{
+				img.src="img/6.jpg";
+				Title.innerHTML = "Shake it";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: Behind SCB</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e7")
+
+			{
+				img.src="img/7.jpg";
+				Title.innerHTML = "CAD it";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th March</span><br><span id="short_desc">Venue: Behind SCB</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e8")
+			{
+				img.src="img/8.jpg";
+				Title.innerHTML = "Float it";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: SCB Canal</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e9")
+			{
+				img.src="img/9.jpg";
+				Title.innerHTML = "D Bug C Bug";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th March</span><br><span id="short_desc">Venue: CSE lab</span><br><span id="short_desc">Time Slot: <br> 2:00 PM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e10")
+			{
+				img.src="img/10.jpg";
+				Title.innerHTML = "Web Design";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: CSE Lab</span><br><span id="short_desc">Time Slot: <br> 1:00 PM to 5:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e11")
+			{
+				img.src="img/11.png";
+				Title.innerHTML = "Hackathon";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th and 6th March</span><br><span id="short_desc">Venue: LH-SF-7</span><br><span id="short_desc">Time Slot: <br> 10:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e12")
+			{
+				img.src="img/12.png";
+				Title.innerHTML = "Science Expo";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: GF-04 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 12:00 PM <br> 1:00 PM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e13")
+			{
+				img.src="img/13.png";
+				Title.innerHTML = "Project Expo";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: GF-04 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 10:00 AM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e14")
+			{
+				img.src="img/14.jpg";
+				Title.innerHTML = "Avishkar (Paper Presentation)";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th March</span><br><span id="short_desc">Venue: LH-SF-4 and LH-SF-5</span><br><span id="short_desc">Time Slot: <br> 10:00 AM to 5:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e15")
+			{
+				img.src="img/15.jpg";
+				Title.innerHTML = "Tik Tik Tik";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: GF-03 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 10:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e16")
+			{
+				img.src="img/16.jpg";
+				Title.innerHTML = "Control It";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: LH-FF-5</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 12:00 PM <br> 1:00 PM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e17")
+			{
+				img.src="img/17.jpg";
+				Title.innerHTML = "LineX";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th March</span><br><span id="short_desc">Venue: GF-03 (Admin Block)</span><br><span id="short_desc">Time Slot: <br> 1:00 PM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e18")
+			{
+				img.src="img/18.jpg";
+				Title.innerHTML = "Task Master";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: EEE lab</span><br><span id="short_desc">Time Slot: <br>  1:00 PM to 5:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e19")
+			{
+				img.src="img/19.jpg";
+				Title.innerHTML = "Robo Soccer";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: EEE lab</span><br><span id="short_desc">Time Slot: <br> 1:00 PM to 5:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e20")
+			{
+				img.src="img/20.jpg";
+				Title.innerHTML = "Carro Quiz";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th March</span><br><span id="short_desc">Venue: LH-FF-1</span><br><span id="short_desc">Time Slot: <br> 2:00 PM to 5:00 PM </span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	if(clicked == "e21")
+			{
+				img.src="img/21.jpg";
+				Title.innerHTML = "Gaming";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: LH-SF-1, LH-SF-2 and LH-SF-3</span><br><span id="short_desc">Time Slot: <br> 10:00 AM Onwards</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	
+				if(clicked == "e23")
+			{
+				img.src="img/23.jpg";
+				Title.innerHTML = "Online Events";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: LH-FF-5</span><br><span id="short_desc">Time Slot: <br> 9:00 AM to 12:00 PM <br> 1:00 PM to 4:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	
+			if(clicked == "e26")
+			{
+				img.src="img/26.jpg";
+				Title.innerHTML = "CSE Quiz (QWERY)";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: LH-SF-4</span><br><span id="short_desc">Time Slot: <br> 10:00 AM to 12:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	
+			if(clicked == "e24")
+			{
+				img.src="img/24.jpg";
+				Title.innerHTML = "Pixel Craft";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: LH-FF-1</span><br><span id="short_desc">Time Slot: <br> 2:00 PM to 3:30 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}	
+			if(clicked == "e25")
+			{
+				img.src="img/25.jpg";
+				Title.innerHTML = "Novo Initio";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 5th March</span><br><span id="short_desc">Venue: LH-FF-4</span><br><span id="short_desc">Time Slot: <br> 10:00 AM to 12:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e27")
+			{
+				img.src="img/27.jpg";
+				Title.innerHTML = "Face Painting";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 7th March</span><br><span id="short_desc">Venue: LH-FF-2</span><br><span id="short_desc">Time Slot: <br> 4:00 PM to 6:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e28")
+			{
+				img.src="img/28.jpg";
+				Title.innerHTML = "Tatoo Making";
+				Desc.innerHTML = '<br><span id="short_desc">Date: 6th March</span><br><span id="short_desc">Venue: LH-FF-4</span><br><span id="short_desc">Time Slot: <br> 4:00 PM to 6:00 PM</span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+			if(clicked == "e29")
+			{
+				img.src="img/item-1.jpg";
+				Title.innerHTML = "Treasure Hunt";
+				Desc.innerHTML = '<br><span id="short_desc"></span><br><span id="short_desc"></span><br><span id="short_desc"></span><span style="opacity:0"> learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that learn more will be clicked Smaller Description so that</span>  ';
+			}
+		}
+		</script>
+		<script>
+			function goBack() {
+			  window.history.back();
+			}
+			</script>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  h1{
+    position: absolute;
+    top: -73%;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 39%;
+  }
+
+  h1 span{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 18%;
+  }
+
+  .box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 60px;
+    margin: 0 auto;
+  }
+  .card{
+    position: relative;
+    top: -10%;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: -10px 0px 0px 14px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  #section-one{
+    position: absolute;
+    top: 310%;
+    z-index: 1;
+  }
+
+  #section-3{
+    position: absolute;
+    top: 156%;
+    z-index: 1;
+  }
+
+  #section-two{
+    position: absolute;
+    top: 95%;
+    z-index: 1;
+  }
+
+  #section-2{
+    position: absolute;
+    top: 245%;
+    z-index: 1;
+  }
+
+  #section-1 {
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+}
+
+#section-4 {
+  position: absolute;
+  top: 390%;
+  z-index: 1;
+}
+
+#section-5 {
+  position: absolute;
+  top: 445%;
+  z-index: 1;
+}
+
+#section-6 {
+  position: absolute;
+  top: 540%;
+  z-index: 1;
+}
+
+#section-7 {
+  position: absolute;
+  top: 595%;
+  z-index: 1;
+}
+
+#section-8 {
+  position: absolute;
+  top: 655%;
+  z-index: 1;
+}
+
+
+
+  #section-two h1{
+    position: absolute;
+    top: -7%;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 34.5%;
+  }
+
+  #section-2 h1{
+    position: absolute;
+    top: -75%;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 33.5%;
+  }
+
+  #section-4 h1{
+    position: absolute;
+    top: -64%;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 39.5%
+  }
+
+  
+  #section-5 h1{
+    position: absolute;
+    top: -64%;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 34.5%;
+  }
+
+  #section-6 h1{
+    position: absolute;
+    top: -95%;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    left: 35.5%;
+  }
+
+  #section-two .box-1{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin: 0 auto;
+  }
+
+  
+  #section-5 .box-1{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin: 0 auto;
+  }
+
+  #section-2 .box-1{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin: 0 auto;
+  }
+
+  #section-6 .box-1{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin: 0 auto;
+  }
+
+  #section-7 .box-1{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin: 0 auto;
+  }
+
+
+  #section-1 .box-2{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+    margin: 0 auto;
+  }
+
+  #section-1 .card{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: -35px 35px 35px 35px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-4 .box-2{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+    margin: 0 auto;
+  }
+
+  #section-4 .card{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: -35px 35px 35px 35px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-two .alg{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 80px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-5 .alg{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 30px 0px 0px 80px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-2 .alg{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 80px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-6 .alg{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: -30px 0px 0px 80px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-7 .alg{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 80px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-1 .alg_grid{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 198px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-4 .alg_grid{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 198px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-one .align{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-3.align{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  #section-8 .align{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  
+  .card:before,
+  .card:after
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index:-1;
+  }
+  .card:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .card:hover .imgBx
+  {
+    bottom: 80px;
+  }
+
+  .card .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .card .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 60px;
+      text-align: center;
+  }
+
+  .card .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 1000;
+   font-size: 20px;
+   color: rgb(0, 0, 0); 
+  } 
+
+  .card .details h2 span{
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  display: block;
+  margin-top: 5px;
+  
+  
+   }
