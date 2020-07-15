@@ -1,0 +1,63 @@
+.social_icons {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left:0px;
+  right: 0px;
+  width: 100px;
+  
+
+}
+
+.social_icons--link {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 4px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow, background-color, z-index, -webkit-transform;
+  transition-property: transform, box-shadow, background-color, z-index;
+  transition-property: transform, box-shadow, background-color, z-index, -webkit-transform;
+  transition-duration: 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  will-change: transform, contents;
+}
+.social_icons--link-facebook:hover {
+  background-color: #3b5998;
+}
+.social_icons--link-twitter:hover {
+  background-color: #00aced;
+}
+.social_icons--link-google_plus:hover {
+  background-color: #dd4b39;
+}
+.social_icons--link-instagram:hover {
+  background-color: #d93175;
+}
+.social_icons--link-youtube:hover {
+  background-color: #bb0000;
+}
+.social_icons--link, .social_icons--link:hover, .social_icons--link:focus {
+  text-decoration: none;
+}
+.social_icons--link:hover, .social_icons--link:focus, .social_icons--link:active {
+  z-index: 900;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 9px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.social_icons--icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

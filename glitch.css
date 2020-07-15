@@ -1,0 +1,40 @@
+  @import url('https://fonts.googleapis.com/css?family=Jockey+One&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+  .word {
+  bottom: 0;
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3.5em;
+  height: 8%;
+  left: 0;
+  line-height: 20%;
+  margin: auto;
+  right: 0;
+  position: absolute;
+}
+
+.word span {
+  display: inline-block;
+  transform: translateX(100%) scale(0.9);
+  transition: transform 500ms;
+}
+
+.word .done {
+  color: #fff;
+  transform: translateX(0) scale(1);
+}

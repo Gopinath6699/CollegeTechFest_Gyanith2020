@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gyanith '20</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Gyanith '20 is the fourth version of single technical symposium of NIT Puducherry.">
+  <meta name="author" content="Web Team Gyanith,NIT Py" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords"
+    content="Gyanith,gyanith nitpy,nitpy,gyanith, gyanith20, gyanith 2020, college, tech festival, techfest, nit tech fest">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="glitch.css" />
+  <link rel="stylesheet" type="text/css" href="social.css" />
+  <link rel="stylesheet" type="text/css" href="cyber_style.css" />
+  <link rel="stylesheet" type="text/css" href="hambur.css" />
+  <link rel="stylesheet" type="text/css" href="social.css" />
+  <link rel="stylesheet" type="text/css" href="login button.css" />
+  <link rel="stylesheet" type="text/css" href="Main_buttons.css" />
+  <link rel="icon" type="image/png" href="images/img_0.png" sizes="32x32">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="wickedcss.min.css" />
+<script type="text/javascript">
+if (screen.width <= 700) {
+document.location = "Mobile/index.html";
+}
+
+</script>
+
+  <style type="text/css">
+    #anim2{
+        z-index: 2;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 400px;
+        margin:0 auto;
+
+    }
+    canvas{
+      position: fixed;
+      z-index: -1;
+
+    }
+    #timer{
+      z-index: 2;
+      position: absolute;
+      left:0;
+      right: 0;
+
+      margin: 0 auto;
+
+      padding-left: 100px;
+      bottom:15%;
+    animation: fade 2s 7s forwards;
+   opacity: 0;
+}
+  .word
+  {
+    visibility: hidden;
+    position: fixed;
+    }
+
+  .social_icons
+  {
+      visibility: hidden;
+      position: fixed;
+      animation: cssAnimation 0s 6s forwards;
+     top: 0;
+      bottom: 0;
+      height: 267px;
+    margin: auto 0;
+  }
+ 
+.social_icons > a{
+  pointer-events: all;
+  cursor: pointer;
+} 
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+  
+}
+@keyframes fade {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+@keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+        }
+        }
+.fadeIn {
+            -webkit-animation-name: fade;
+            animation-name: fade;
+         }
+#scroll {
+  padding-top: 70px;
+  left: 0;
+  margin:0 auto;
+  width: 100px;
+  right:0;
+  position: fixed;
+  bottom: 130px;
+  visibility: hidden;
+  color:white;
+  text-decoration: none;
+  animation: fadeIn 10s forwards;
+  font-family: 'Fira Sans', sans-serif;
+}
+#scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
+.panel2{
+          display: none;
+          transform: scale(0.5);
+          animation: fadeIn 2s forwards;
+          
+          line-height: 1.6;
+          top: 10%;
+        }
+        .panel3{
+          transform: scale(0.5);
+          animation: fadeIn 2s forwards;
+            position: fixed;
+            padding: 0px 100px;
+            width: 1040px;
+            top: 10%;
+            right: 0;
+            left: 0;
+            margin:auto;
+            line-height: 1.6;
+          font-family: 'Fira Sans', sans-serif;
+            display: none;
+
+        }
+        .panel1
+        {
+            transform: scale(0.5);
+            animation: fadeIn 2s forwards;
+            position: fixed;
+            right: 0;
+            margin: auto;
+            left: 0;
+            padding: 50px 100px;
+            width: 1040px;
+            top: 10%;
+            
+        }
+        .panel2{
+
+          width: 1040px;
+          padding:0 100px;
+          left: 0;
+          right: 0;
+          top:10%;
+          margin:auto;
+          position: fixed;
+          font-family: 'Fira Sans', sans-serif;
+
+        }
+
+        .panel{
+
+          transform: scale(0.5);
+          animation: fadeIn 2s forwards;
+          display: none;
+          font-family: 'Bebas Neue', cursive;
+          
+        }
+        .content__title-wrap
+        {
+          
+        position: fixed;
+        width: 90%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 500px;
+        margin: auto;
+        right: 0;
+       }
+        
+        
+
+        .panelhead
+        {
+          font-family: 'Bebas Neue',cursive;
+        }
+        .subpanel1{
+          transform: scale(0.5);
+          animation: fadeIn 2s forwards;
+          display: none;
+          background: rgba(0,0,0,0.4);
+          font-family: 'Fira Sans', sans-serif;
+          line-height: 1.7;
+
+        }
+        
+        html {
+          overflow-y: scroll;
+          scrollbar-width: none; 
+          -ms-overflow-style: none;  
+      }
+
+        ::-webkit-scrollbar {
+          display: none;
+        }
+
+#anim1
+{
+  position: fixed;
+  top:-5%;
+}
+
+
+#team{
+    position: fixed;
+    animation: fade 9s forwards;
+    z-index: 1;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    width: 500px;
+    margin:0 auto;
+    visibility: hidden;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+#heart {
+    color: red;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.material-icons {
+    position: relative;
+    font-size: 34px;
+    letter-spacing: 5px;
+    top: 5px;
+}
+
+.team{
+  text-decoration: none;
+  color:white;
+  transition:color 0.3 ease;
+}
+
+.team:hover
+{
+  color:blueviolet;
+}
+
+.main_btn{
+  position: fixed;
+    width: 100%;
+    height: 17px;
+    top: 0;
+    visibility: hidden;
+    bottom: 0;
+    margin: auto;
+}
+#workarea{
+  width: 100px;
+    left: -63px;
+    position: fixed;
+    height: 5%;
+    top: 0;
+
+
+}
+#anim2
+{
+      z-index: 2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 400px;
+    margin: auto;
+    height: 310px;
+    top: 0;
+    bottom: 0;
+}
+canvas
+{
+  position: fixed;
+  top:0;
+  z-index: -1;
+}
+#icon{
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+.cont
+{
+  color:white;
+}
+.svg-wrapper
+{
+  visibility: hidden;
+}
+
+
+
+  </style>
+  
+</head>
+
+<body style="height:2800px;" >
+ 
+  <div id='anim1'></div>
+    <script src="lottie.js"></script>
+    <script src="Layout.js"></script>
+
+    <div id="workarea">
+        <div class="position">
+      
+        <!--start button, nothing above this is necessary -->
+        <div class="svg-wrapper">
+            <svg height="40" width="100" xmlns="http://www.w3.org/2000/svg">
+              <rect id="shape" height="40" width="100" />
+              <div id="text">
+                <a href="login.php"><span class="spot"></span>Login</a>
+              </div>
+            </svg>
+          </div>
+      
+        </div>
+      </div>
+
+  <div class="cont" >  
+  <div class ='content__title-wrap'>
+    <div class="main_btn">
+      <div class='btn-cont btn-1'>
+        <a class='btn' href='Hackathon/index.html'>
+          HACKATHON
+          <span class='line-1'></span>
+          <span class='line-2'></span>
+          <span class='line-3'></span>
+          <span class='line-4'></span>
+        </a>
+      </div>
+      <div class='btn-cont btn-2'>
+        <a class='btn' href='Tech-exhibition/index.html'>
+          TECH EXHIBITION
+          <span class='line-1'></span>
+          <span class='line-2'></span>
+          <span class='line-3'></span>
+          <span class='line-4'></span>
+        </a>
+      </div>
+      <div class='btn-cont btn-3'>
+        <a class='btn' href='Reach us/index.html'>
+          REACH US
+          <span class='line-1'></span>
+          <span class='line-2'></span>
+          <span class='line-3'></span>
+          <span class='line-4'></span>
+        </a>
+      </div>
+      <div class='btn-cont btn-4'>
+        <a class='btn' href='Workshops/index.html'>
+          WORKSHOPS 
+          <span class='line-1'></span>
+          <span class='line-2'></span>
+          <span class='line-3'></span>
+          <span class='line-4'></span>
+        </a>
+      </div>
+      <div class='btn-cont btn-5'>
+        <a class='btn' href='Pro shows/index.html'>
+          PRO SHOWS
+          <span class='line-1'></span>
+          <span class='line-2'></span>
+          <span class='line-3'></span>
+          <span class='line-4'></span>
+        </a>
+      </div>
+      <div class='btn-cont btn-6'>
+        <a class='btn' href='Events/index.html'>
+          EVENTS
+          <span class='line-1'></span>
+          <span class='line-2'></span>
+          <span class='line-3'></span>
+          <span class='line-4'></span>
+        </a>
+      </div>
+  </div>
+
+  <div id='anim2'></div>
+    <script src="Logo.js"></script>
+
+    <div id='anim3'></div>
+  <script src="arc.js"></script>
+  </div>
+
+  
+  <div class="panel1" data-scroll-point="100">
+            <h1 class="panel">ABOUT NITPY</h1>
+            <h3 class="subpanel1">
+              The coast of Bay of Bengal witnessed the rise of a new era of technical education as one of India's Institute of national importance, National Institute of Technology, Puducherry, got established in 2010, at Karaikal. Karaikal,  formerly known  for its diverse culture and cuisines is now redefining the standards of technical education. 
+            </h3>
+          </div>
+
+
+
+          <div class="panel2" id="panel2" data-scroll-point="300">
+            <h1 class="panelhead">ABOUT GYANITH</h1>
+            <h3 id="subpanel2">Gyanith, to us, is much more than our technical festival. It is the manifestation of our collective dreams, ambitions, ideas and passion, all of it crammed into a power packed four days of workshops, technical showcases, hackathons, quizzes and various other technical competitions. Not only that, Gyanith also packs cultural presentations and various pro shows. The fest is as diverse as us NITians, bustling with ideas from every corner of the nation. With every passing year, Gyanith grows in scale, duration, diversity and ambition, alluring visitors from afar who wish to witness our techno spectacle. This year the ambitious spirit towers more than ever, with a greater number and rich diversity of workshops and events from all the departments, covering every cutting edge niche of the tech industry. Wherever your interests lie, we sure got you covered. Come join us for our energetic and informative techno carnival.</h3>
+          </div>
+          <div class="panel3">
+          <h1 class="panelhead">HISTORY OF GYANITH</h1>
+          <h3 class="subpanel3">
+            NIT Puducherry is famous for its advancements made in technical fields and a major contribution is done through the Institute's proudest event, Gyanith. Since it's inception in 2017, Gyanith is setting up a new benchmark every year, in the number of events as well as in the number of participants. Spreading its fame across Puducherry, Tamil Nadu, and Kerala, Gyanith  is now ready to be India's largest sought technical platform, with its.. 4th  edition, where it comes up with more events, newer and better! After the curtain raiser of Gyanith '20,  the highlights are many workshops on hot and trending topics in technical fields, handled by the person of expertise from the respective areas. Apart from the technical events, Gyanith is a platform to bring up young and talented brains from the school benches through its science expos and project expos areawaiting  the students pursuing  undergraduate and higher degrees. Also with a big fat stage with non restricting mike,  we welcome all the proficient performers to come and entertain our great audience through our non technical events.Gyanith '20 is this undoubtedly, a great opportunity to showcase and widen your vistas of knowledge. 
+          </h3>
+
+          </div>
+ 
+        </div>
+    <!--div id='anim3'></!--div>
+    <script src="Text_box_1.js"></script>
+
+  <div id='anim4'></div>
+    <script src="Text_box_2.js"></script>
+
+  <div id='anim5'></div>
+    <script src="Battery.js"></script>
+
+  <div id='anim6'></div>
+    <script src="Text_box_3.js"></script>
+
+  <div id='anim7'></div>
+    <script-- src="Circle.js"></script--> 
+
+    <nav role='navigation'>
+        <div id="menuToggle">
+              <input type="checkbox" />
+            <span id='f'></span>
+            <span id='m'></span>
+            <span id='l'></span>
+
+            <ul id="menu"> 
+                <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+                <li><a href="Workshops/index.html"><i class="fas fa-tools" id="icon"></i>Workshops</a></li>
+                <li><a href="Events/index.html" ><i class="material-icons">emoji_events</i>Events</a></li>
+                <li><a href="Pro shows/index.html"><i class="material-icons">movie_filter</i>Pro-Shows</a></li>
+                <li><a href="Tech-exhibition/index.html"><i class="material-icons">color_lens</i>Tech Exhibition</a></li>
+                <li><a href="Portfolio Members/Portfolio Members.html"><li><i class="fas fa-users" id="icon"></i>Portfolio Members</a></li>
+                <li><a href="Team Gyanith/Team Gyanith.html"><i class="fas fa-people-carry" id="icon"></i>Team Gyanith</a></li>         
+                <li><a href="Hospitality/index.html"><i class="fas fa-bed" id="icon"></i>Accommodation</a></li>
+                <li><a href="T-Shirt/index.html"><i class="fas fa-tshirt" id="icon"></i>T-Shirt</a></li>
+                <li><a href="Sponsors/index.html"><i class="fas fa-donate" id="icon"></i>Sponsors</a></li>
+                <li><a href="Reach us/index.html"><i class="fas fa-map-marked-alt" id="icon"></i>Reach us<a></li>
+                  <!--a-- href="login.php"><li>Login</li></!--a-->  
+              </ul>
+        </div>
+      </nav>
+    
+    <a href="#section06" id="scroll"><span></span>Scroll</a><br>
+	<h4 id="team">Made with <span id="heart">❤</span> by <a class='team' href="Team Gyanith/Team Gyanith.html">Team 404</a> and <a class='team' href="Team Gyanith/Team Gyanith.html#section-5">Design Team</a></h4>
+	<br>
+
+    <div class="social_icons ">
+
+        <a href="https://www.facebook.com/gyanith.nitpy/" class="social_icons--link social_icons--link-facebook" target="_blank">
+          <svg class="social_icons--icon icon icon-facebook" fill="#3C5A99" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M20.9,2H3.1C2.5,2,2,2.5,2,3.1v17.8C2,21.5,2.5,22,3.1,22h9.6v-7.7h-2.6v-3h2.6V9c0-2.6,1.6-4,3.9-4c1.1,0,2.1,0.1,2.3,0.1v2.7l-1.6,0c-1.3,0-1.5,0.6-1.5,1.5v1.9h3l-0.4,3h-2.6V22h5.1c0.6,0,1.1-0.5,1.1-1.1V3.1C22,2.5,21.5,2,20.9,2z"/>
+          </svg>
+        </a>
+    
+        <a href="https://www.instagram.com/nitpy_gyanith/" class="social_icons--link social_icons--link-instagram" target="_blank">
+          <svg class="social_icons--icon icon icon-instagram" fill="#D93175" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12,3.8c2.7,0,3,0,4,0.1c1,0,1.5,0.2,1.9,0.3C18.4,4.4,18.7,4.6,19,5c0.3,0.3,0.6,0.7,0.7,1.1C19.9,6.5,20.1,7,20.1,8c0,1.1,0.1,1.4,0.1,4s0,3-0.1,4c0,1-0.2,1.5-0.3,1.9c-0.2,0.5-0.4,0.8-0.7,1.1c-0.3,0.3-0.7,0.6-1.1,0.7c-0.4,0.1-0.9,0.3-1.9,0.3c-1.1,0-1.4,0.1-4,0.1s-3,0-4-0.1c-1,0-1.5-0.2-1.9-0.3C5.6,19.6,5.3,19.4,5,19c-0.3-0.3-0.6-0.7-0.7-1.1C4.1,17.5,3.9,17,3.9,16c0-1.1-0.1-1.4-0.1-4s0-3,0.1-4c0-1,0.2-1.5,0.3-1.9C4.4,5.6,4.6,5.3,5,5c0.3-0.3,0.7-0.6,1.1-0.7C6.5,4.1,7,3.9,8,3.9C9,3.8,9.3,3.8,12,3.8 M12,2C9.3,2,8.9,2,7.9,2.1c-1.1,0-1.8,0.2-2.4,0.5C4.8,2.8,4.2,3.1,3.7,3.7C3.1,4.2,2.8,4.8,2.5,5.4C2.3,6.1,2.1,6.8,2.1,7.9C2,8.9,2,9.3,2,12c0,2.7,0,3.1,0.1,4.1c0,1.1,0.2,1.8,0.5,2.4c0.3,0.7,0.6,1.2,1.2,1.8c0.6,0.6,1.1,0.9,1.8,1.2c0.6,0.2,1.4,0.4,2.4,0.5C8.9,22,9.3,22,12,22s3.1,0,4.1-0.1c1.1,0,1.8-0.2,2.4-0.5c0.7-0.3,1.2-0.6,1.8-1.2c0.6-0.6,0.9-1.1,1.2-1.8c0.2-0.6,0.4-1.4,0.5-2.4c0-1.1,0.1-1.4,0.1-4.1s0-3.1-0.1-4.1c0-1.1-0.2-1.8-0.5-2.4c-0.3-0.7-0.6-1.2-1.2-1.8c-0.6-0.6-1.1-0.9-1.8-1.2c-0.6-0.2-1.4-0.4-2.4-0.5C15.1,2,14.7,2,12,2L12,2z"/>
+            <path d="M12,6.9c-2.8,0-5.1,2.3-5.1,5.1s2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1S14.8,6.9,12,6.9z M12,15.3c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3C15.3,13.8,13.8,15.3,12,15.3z"/>
+            <circle cx="17.3" cy="6.7" r="1.2"/>
+          </svg>
+        </a>
+
+        <a href="https://in.linkedin.com/in/marketing-gyanith-90633419a" class="social_icons--link social_icons--link-linkedin" target="_blank">
+            <svg class="social_icons--icon icon icon-linkedin" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+    
+        <a href="https://www.youtube.com/channel/UCL8yfte7HZy_KGE-fckMsqQ" class="social_icons--link social_icons--link-youtube" target="_blank">
+          <svg class="social_icons--icon icon icon-youtube" fill="#CD201F" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M22.8,7.6c0,0-0.2-1.5-0.9-2.2c-0.8-0.9-1.8-0.9-2.2-0.9C16.6,4.3,12,4.3,12,4.3h0c0,0-4.6,0-7.7,0.2C3.9,4.5,2.9,4.5,2.1,5.4C1.4,6.1,1.2,7.6,1.2,7.6S1,9.4,1,11.2v1.7c0,1.8,0.2,3.6,0.2,3.6s0.2,1.5,0.9,2.2c0.8,0.9,1.9,0.8,2.4,0.9c1.8,0.2,7.5,0.2,7.5,0.2s4.6,0,7.7-0.2c0.4-0.1,1.4-0.1,2.2-0.9c0.7-0.7,0.9-2.2,0.9-2.2s0.2-1.8,0.2-3.6v-1.7C23,9.4,22.8,7.6,22.8,7.6z M9.7,14.9V8.7l5.9,3.1L9.7,14.9z"/>
+          </svg>
+        </a>
+
+        <a href="https://twitter.com/nitpygyanith" class="social_icons--link social_icons--link-twitter" target="_blank">
+          <svg class="social_icons--icon icon icon-twitter" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M7.9,20.9c8.3,0,12.8-6.9,12.8-12.8c0-0.2,0-0.4,0-0.6c0.9-0.6,1.6-1.4,2.3-2.3c-0.8,0.4-1.7,0.6-2.6,0.7c0.9-0.6,1.6-1.4,2-2.5c-0.9,0.5-1.8,0.9-2.9,1.1c-0.8-0.9-2-1.4-3.3-1.4c-2.5,0-4.5,2-4.5,4.5c0,0.4,0,0.7,0.1,1c-3.8-0.2-7.1-2-9.3-4.7C2.1,4.6,1.9,5.3,1.9,6.2c0,1.6,0.8,2.9,2,3.8c-0.7,0-1.4-0.2-2-0.6c0,0,0,0,0,0.1c0,2.2,1.6,4,3.6,4.4C5.1,13.9,4.7,14,4.3,14c-0.3,0-0.6,0-0.8-0.1C4,15.7,5.7,17,7.7,17C6.1,18.3,4.2,19,2.1,19c-0.4,0-0.7,0-1.1-0.1C3,20.2,5.4,20.9,7.9,20.9"/>
+          </svg>
+        </a>
+
+      </div>
+  <script src="three.min.js"></script>
+  <script src="background.js"></script>
+  <!--script src="countdown.js"></script>-->
+  <div class="word">MAR 4-7</div>
+
+  
+
+<!--script for glitchy text-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+<script type="text/javascript">
+var text = "MAR 4-7";
+function Ticker( elem ) {
+  elem.lettering();
+  this.done = false;
+  this.cycleCount = 5;
+  this.cycleCurrent = 0;
+  this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~ '.split('');
+  this.charsCount = this.chars.length;
+  this.letters = elem.find( 'span' );
+  this.letterCount = this.letters.length;
+  this.letterCurrent = 0;
+
+  this.letters.each( function() {
+    var $this = $( this );
+    $this.attr( 'data-orig', $this.text() );
+    $this.text( '-' );
+  });
+}
+
+Ticker.prototype.getChar = function() {
+  return this.chars[ Math.floor( Math.random() * this.charsCount ) ];
+};
+
+Ticker.prototype.reset = function() {
+  this.done = false;
+  this.cycleCurrent = 0;
+  this.letterCurrent = 0;
+  this.letters.each( function() {
+    var $this = $( this );
+    $this.text( $this.attr( 'data-orig' ) );
+    $this.removeClass( 'done' );
+  }
+  
+);
+
+  this.loop();
+};
+
+Ticker.prototype.loop = function() {
+  var self = this;
+
+  this.letters.each( function( index, elem ) {
+    var $elem = $( elem );
+    if( index >= self.letterCurrent ) {
+      if( $elem.text() !== ' ' ) {
+        $elem.text( self.getChar() );
+        $elem.css( 'opacity', Math.random() );
+      }
+    }
+  });
+
+  if( this.cycleCurrent < this.cycleCount ) {
+    this.cycleCurrent++;
+  } else if( this.letterCurrent < this.letterCount ) {
+    var currLetter = this.letters.eq( this.letterCurrent );
+    this.cycleCurrent = 0;
+    currLetter.text( currLetter.attr( 'data-orig' ) ).css( 'opacity', 1 ).addClass( 'done' );
+    this.letterCurrent++;
+  } else {
+    this.done = true;
+  }
+
+  if( !this.done ) {
+    requestAnimationFrame( function() {
+      self.loop();
+    });
+  } else {
+    setTimeout( function() {
+      if(text=="Gyanith '20")
+        text="MAR 4-7";
+      else
+      text = "Gyanith '20";
+      $(".word").html(text);
+      $words = $( '.word' );
+
+$words.each( function() {
+  var $this = $( this ),
+    ticker = new Ticker( $this ).reset();
+  $this.data( 'ticker', ticker  );
+});
+    }, 3000 );
+  }
+};
+
+$words = $( '.word' );
+
+$words.each( function() {
+  var $this = $( this ),
+    ticker = new Ticker( $this ).reset();
+  $this.data( 'ticker', ticker  );
+});
+
+  $(document).ready(function() {
+  setTimeout(function() {
+    $(".social_icons").css("visibility", "visible");
+    $(".social_icons").addClass("slideRight")
+  }, 6000);
+});
+
+$(document).ready(function() {
+  setTimeout(function() {
+    $(".word").css("visibility", "visible");
+    $(".word").addClass("bounceIn")
+  }, 6000);
+});
+$(document).ready(function() {
+      setTimeout(function() {
+        $(".main_btn").css("visibility", "visible")
+        $(".main_btn").addClass("fadeIn")
+        }, 9000);
+      });
+$(document).ready(function() {
+      setTimeout(function() {
+        $(".svg-wrapper").css("visibility", "visible")
+        $(".svg-wrapper").addClass("fadeIn")
+        }, 9000);
+      });
+
+$(document).ready(function() {
+			setTimeout(function() {
+				$("#scroll").css("visibility", "visible");
+        $("#scroll").addClass("fadeIn")
+        }, 9000);
+			});
+
+			$(document).ready(function() {
+			setTimeout(function() {
+				$("#team").css("visibility", "visible")
+        $("#team").addClass("fadeIn")
+        }, 8000);
+			});
+
+</script>
+<script>
+
+function gototop() {
+  window.scrollTo(0,0);
+  callPlayer("panel2","pauseVideo")
+  play = false;
+}
+$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
+
+$(window).scroll(function(e) {
+  
+  
+  if ($(this).scrollTop() <200 )
+  {
+    $('.panel').fadeOut();
+    $('.subpanel1').fadeOut();
+    $('.panel2').fadeOut();
+
+    $('.content__title-wrap').fadeIn();
+    $("#scroll").fadeIn();
+
+  }
+  if($(this).scrollTop()>200 && $(this).scrollTop()<400)
+  {
+    //document.getElementById('counter').style.display = "block";
+
+    $('.content__title-wrap').fadeOut();
+    $('.panel').fadeOut();
+    $('.subpanel1').fadeOut();
+    $('.panel2').fadeOut();
+    
+  }
+
+  if ($(this).scrollTop() > 400 && $(this).scrollTop()<500 ) { // choose the value you want.
+    console.log($(this).scrollTop());
+    $('.content__title-wrap').fadeOut();
+    $('.subpanel1').fadeOut();  
+    
+    $('.panel2').fadeOut();
+    $('.panel').fadeIn();
+
+    
+
+  } 
+  if($(this).scrollTop() >500  && $(this).scrollTop()<1200)
+  {
+    
+    play = false;
+
+    //callPlayer("panel2","pauseVideo");
+    $('.content__title-wrap').fadeOut();
+    $('.panel').fadeIn();
+  
+   $('.panel2').fadeOut();
+   $('.subpanel1').fadeIn();
+    console.log(play);
+    
+      
+    
+  }
+  if($(this).scrollTop() > 1200 && $(this).scrollTop()<= 1500)
+  {
+    
+    $('.content__title-wrap').fadeOut();
+    console.log($(this).scrollTop());
+    
+    
+    
+    
+    $('.subpanel1').fadeOut();
+    $('.panel').fadeOut();
+   
+    $('.panel3').fadeOut();
+     $('.panel2').fadeIn();
+    
+  }
+  if($(this).scrollTop() > 1500 && $(this).scrollTop()<= 1700)
+  {
+        $("#scroll").fadeOut();
+    $('.panel2').fadeOut();
+  }
+  if($(this).scrollTop()>1700) 
+  {
+    $('.subpanel1').fadeOut();
+    $('.panel').fadeOut();
+    $('.panel2').fadeOut();
+    $('.panel3').fadeIn();
+  }
+  
+});
+
+    </script>
+<!--div id="counter" >
+    <script type="text/javascript" src="https://www.stat-counter.org/count/36j7"></script><br>
+    <a href='http://www.counter-zaehler.de' >besucherzähler internetseite</!--a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=4f42fdcbd476314f395833d75bcaf9687d7f6eca'></script>
+</!--div-->
+</body>
+
+</html>
