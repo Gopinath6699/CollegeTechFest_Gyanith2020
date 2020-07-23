@@ -12,7 +12,7 @@ LINK: http://gyanith.org/
 
 ## WORKSHOP
 
-![image](https://user-images.githubusercontent.com/53274915/88300354-00d81f00-cd21-11ea-8c79-d93d42e663a1.png)
+![image](https://user-images.githubusercontent.com/53274915/88300871-9b386280-cd21-11ea-82bd-818710314472.png)
 
 ## REACH US
 
